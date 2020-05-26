@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+<h1>Please enter the Teaxt</h1>
+<form action="{% url 'count' %}">
+    <textarea cols="40" rows="10" name="fulltext"></textarea><br>
+    <button type="submit">Count</button>
+</form>
+<a href="{% url 'about'%}">About Me</a>
+</body>
+</html>
+

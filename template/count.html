@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Count Page</title>
+</head>
+<body>
+<a href="{% url 'home' %}">Go to Home</a>
+<h1>There are {{ count }} words in our string</h1>
+<h2>Your Text :</h2>
+{{ fulltext }}
+
+<h2>The word count are :</h2>
+
+{% for word, countno in wordDictionary %}
+<p>{{ word }} : {{ countno }} </p>
+{% endfor %}
+
+</body>
+</html>
